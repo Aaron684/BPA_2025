@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scrolling for in-page links */
+}
+
+body {
+  font-family: "Lora", serif; /* placeholder font */
+  background-color: #1c2a39; /* deep navy background */
+  color: #f5f5f5; /* soft off-white text */
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Typography
+------------------------------ */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: #a3b18a; /* sage green for headings */
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+  color: #f5f5f5;
+}
+
+a {
+  color: #d4a373; /* muted gold for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #9a8c98; /* dusty lavender on hover */
+}
+
+/* ------------------------------
+   Layout Containers
+------------------------------ */
+header,
+footer {
+  background-color: #2e2e2e; /* charcoal */
+  padding: 1rem 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* ------------------------------
+   Navbar
+------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a3b18a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+.nav-links a:hover {
+  color: #d4a373;
+}
+
+/* ------------------------------
+   Sections
+------------------------------ */
+section {
+  margin: 4rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #2e2e2e; /* subtle contrast from body */
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ------------------------------
+   Images
+------------------------------ */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9a8c98;
+}
+main section:first-of-type {
+  margin-top: 1rem; /* reduce top margin between navbar and quote section */
+}
